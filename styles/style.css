@@ -9,47 +9,69 @@ html {
 body {
   height: 100%;
   font-family: 'Audiowide', sans-serif;
-  background-image: url(../assets/patroon_licht.png);
-  background-repeat: no-repeat;
-  background-size: cover ;
+  /* background-color: #202424dc; */
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 article {
-  
+/*onderstaande properties zorgen ervoor dat het kaartje gecentreerd staat op grotere schermen*/
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 30%;
-  border: 3px groove #03f1f1;
+  border: 5px groove #03f1f1;
   margin: auto;
   border-radius: 2rem;
   color: white;
-  background-color: #10ebebdc;;
+ /*Ik heb hier een achtergrond kleur neergezet, voor het geval de afbeelding niet kan laden*/
+  background-color: #10ebebdc;
+  background-image: url(../assets/patroon_donker.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Ik heb hier een box shadow geplaatst om mijn visitekaartje naar voren te laten komen*/
+  -webkit-box-shadow: 15px 15px 5px 0px rgba(97,97,97,0.7);
+  -moz-box-shadow: 15px 15px 5px 0px rgba(97,97,97,0.7);
+  box-shadow: 15px 15px 5px 0px rgba(97,97,97,0.7);
+
+
 
 }
-
+/*header zorgt ervoor dat mijn logo gecentreerd boven staat*/
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2.5em;
-  
-}
 
+}
+/*Ik heb hier een border radius gegeven, zodat er samenhang zit met de border radius van de article tag*/
 figure img {
 
   width: 350px;
   height: 550px;
-  border: 1rem;
+  border: 3px solid #30ffff;
+  border-radius: 25px;
 }
 
 figure {
-  border: 1rem;
+  border-radius: 20px;
+}
+figcaption {
+  margin: 10px;
+  font-size: 1.3em;
+
 }
 
-h2 {
-  font-size: 2em;
+/*De kop heb ik een "glowing" animation gegeven die 1 seconde duurt*/
+h1 {
+  font-size: 2.5em;
 }
 
 .glow {
@@ -63,50 +85,39 @@ h2 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008080, 0 0 40px #008080, 0 0 50px #04f7f7, 0 0 60px #04f7f7, 0 0 70px #08ffff;
   }
+
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #008080, 0 0 50px #008080, 0 0 60px #04f7f7, 0 0 70px #04f7f7, 0 0 80px #08ffff;
   }
 }
-
-
-
-/* button {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: .25rem;
-  border: none;
-  border-radius: 50%;
-  background: rgba(0,239,255,1);
-  transform: scale(.8);
-  transition: .25s;
-}
-button:focus {
-  outline: none;
-  background: #202592;
-}
-button:focus svg {
-  stroke: rgba(0,239,255,1);
-} */
-
-
-p { 
-  margin: 0;
+/*Button krijgt nog een transition en dropdown met behulp van pseudo selectors*/
+#neon {
+  background-color: #04f7f7;
+  border: 2px solid #0f3c3c;
+  color: #fff;
+  padding: 1em;
+  border-radius: 50px;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1em;
+  margin: 10px;
 }
 
-article > p {
+
+p {
+  margin: 10px;
+  line-height: 1.6;
+}
+
+/* article > p {
   width: 100%;
-  margin-top: 0;
   padding: 3rem 2rem;
   border-radius: 0 0 1rem 1rem;
   text-align: center;
   background: rgba(255,255,255, 0.5);
-}
+} */
 
 /* expand content */
-body.expand {
+/* body.expand {
   font-size: 1.15em;
 }
 
@@ -131,4 +142,4 @@ body.expand dd {
 
 body.expand img {
   width: 15em;
-}
+} */
