@@ -10,6 +10,8 @@ body {
   height: 100%;
   font-family: 'Audiowide', sans-serif;
   background-image: url(../assets/patroon_licht.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
 }
 
 article {
@@ -18,7 +20,7 @@ article {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+  width: 30%;
   border: 3px groove #03f1f1;
   margin: auto;
   border-radius: 2rem;
