@@ -110,6 +110,7 @@ nav a{
   font-weight: 400;
   text-shadow: 0 0 1px rgba(255,255,255,0.3);
   font-size: .95em;
+  padding: 1em;
 }
 
 nav a:hover,
@@ -154,19 +155,19 @@ nav a:focus {
 }
  #logo {
 position: absolute;
-top:8px;
-right: 15px;
+bottom:4em;
+right: 2em;
 /* padding: 1em; */
-width: 200px;
-height: 175px;
+width: 180px;
+height: 145px;
 }
 
-/* section p {
-  padding: .5em;
-} */
+
 
 ul {
   list-style-type: none;
+  margin: 0;
+  text-align: left;
 }
 
 
