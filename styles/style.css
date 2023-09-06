@@ -25,9 +25,9 @@ article {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 30%;
+  width: 60%;
   border: 5px groove #03f1f1;
-  margin: auto;
+  margin: auto;/*zet alles gecentreerd*/
   border-radius: 2rem;
   color: white;
  /*Ik heb hier een achtergrond kleur neergezet, voor het geval de afbeelding niet kan laden*/
@@ -42,26 +42,22 @@ article {
 
 
 
-}
-/*header zorgt ervoor dat mijn logo gecentreerd boven staat*/
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2.5em;
 
 }
+
 /*Ik heb hier een border radius gegeven, zodat er samenhang zit met de border radius van de article tag*/
 figure img {
 
-  width: 350px;
-  height: 550px;
+  height: 550px; 
   border: 3px solid #30ffff;
   border-radius: 25px;
+  
 }
 
 figure {
+  
   border-radius: 20px;
+  width: 50%;
 }
 figcaption {
   margin: 10px;
@@ -69,9 +65,63 @@ figcaption {
 
 }
 
+.typewriter  {
+  color: #fff;
+  font-family:  'Audiowide', sans-serif;
+  overflow: hidden;
+  border-right: .15em solid #04f7f7;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+  typing 5.5s steps(25, end),
+  blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #04f7f7 }
+}
+
+section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  
+  
+}
+
+ #logo {
+position: absolute;
+top:8px;
+right: 15px;
+padding: 1em;
+width: 200px;
+height: 175px;
+}
+
+section p {
+  padding: .5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
 /*De kop heb ik een "glowing" animation gegeven die 1 seconde duurt*/
 h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
 }
 
 .glow {
