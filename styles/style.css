@@ -23,7 +23,7 @@ article {
   display: flex;
   flex-direction: row; /*zet alles naast elkaar*/
   align-items: center; /*centreert alle elementen binnen het article element*/
-  justify-content: flex-start; /*laat de content bij het begin beginnen*/
+  justify-content: center; /*laat de content bij het begin beginnen*/
   width: 70%; /*neemt 70% van het scherm in*/
   border: 5px groove #03f1f1; /*geeft een soort 3d-effect*/
   margin: auto; /*zet alles gecentreerd op scherm*/
